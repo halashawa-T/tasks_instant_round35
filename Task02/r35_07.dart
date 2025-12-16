@@ -92,7 +92,7 @@ class Triangle extends Shape{
 
 void mainShapes(){
     print("============= Shape Areas =============");
-    List<Shape> shapes = [Circle(5); Rectangle(4,6) Triangle(3,4)];
+    List<Shape> shapes = [Circle(5), Rectangle(4,6), Triangle(3,4)];
 
     for (var s in shapes){
         print ("${s.name} Area: ${s.calculateArea()}");
@@ -268,7 +268,7 @@ void mainDevices(){
 
     Tablet tab=Tablet("Apple", "Ipad pro",20,true,true);
     tab.showDevice();
-    tab.showFeatures()
+    tab.showFeatures();
 }
 
 void main(){

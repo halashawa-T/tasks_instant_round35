@@ -1,7 +1,6 @@
     
+import 'dart:math';
 
-
-class Vehicle
  class Vehicle{
    String brand;
    int year ;
@@ -24,7 +23,6 @@ class Vehicle
      print(' brand : $brand , year : $year , \n  Type : Car ,  doors : $doors');
    }
  }
-   class Motorcycle 
 
  class Motorcycle extends Vehicle{
   bool hasSidecar;
@@ -59,7 +57,6 @@ class Vehicle
     print('---');
   Motorcycle moto1 =Motorcycle(hasSidecar: false, brand: 'Hounda', year: 2012);
    moto1.displayinfo();
-/    print('---');
 
   Truck truk1=Truck(cargoCapacity: 1000, brand: 'Mercedes ', year: 2020);
  truk1.displayinfo();
@@ -69,7 +66,6 @@ class Vehicle
  
 //----------TASK2------------
  
-import 'dart:math';
 
 class Shape {
   String name;
@@ -111,12 +107,13 @@ class Shape {
    print(" $name - Base:$base , height: $height -Area :${base *height*1/2}  ");
    }
  }
- void main(){
-   print("=== Shape Areas ===");
-   Circle c1=Circle(name: "Circle", radius: 4.0);
-   c1.calculateArea();
-   Rectangle rec1=Rectangle(name:'Rectangle', length: 3.5, width: 4);
-  rec1.calculateArea();
-  Triangle tri1=Triangle(name: 'Triangle', base: 3, height: 4);
-  tri1.calculateArea();
- }
+
+//  void main(){
+//    print("=== Shape Areas ===");
+//    Circle c1=Circle(name: "Circle", radius: 4.0);
+//    c1.calculateArea();
+//    Rectangle rec1=Rectangle(name:'Rectangle', length: 3.5, width: 4);
+//   rec1.calculateArea();
+//   Triangle tri1=Triangle(name: 'Triangle', base: 3, height: 4);
+//   tri1.calculateArea();
+//  }
