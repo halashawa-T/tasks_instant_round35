@@ -1,4 +1,5 @@
 // Program 1: Vehicle Inheritance
+import 'dart:math';
 
 class Vehicle {
   String brand;
@@ -85,7 +86,6 @@ void main() {
   truck.showInfo();
 }// Program 2: Shape Inheritance
 
-import 'dart:math';
 
 class Shape {
   String name;
@@ -156,18 +156,20 @@ class Triangle extends Shape {
   }
 }
 
-void main() {
-  print('Shape Areas');
+// void main() {
+//   print('Shape Areas');
 
-  Circle circle = Circle(radius: 5);
-  circle.displayInfo();
+//   Circle circle = Circle(radius: 5);
+//   circle.displayInfo();
 
-  Rectangle rectangle = Rectangle(length: 4, width: 6);
-  rectangle.displayInfo();
+//   Rectangle rectangle = Rectangle(length: 4, width: 6);
+//   rectangle.displayInfo();
 
-  Triangle triangle = Triangle(base: 3, height: 4);
-  triangle.displayInfo();
-}// Program 3: Employee Inheritance
+//   Triangle triangle = Triangle(base: 3, height: 4);
+//   triangle.displayInfo();
+// }
+
+// Program 3: Employee Inheritance
 
 abstract class Employee {
   String id;
@@ -246,34 +248,35 @@ class Contractor extends Employee {
   }
 }
 
-void main() {
-  print('Employee Salaries');
+// void main() {
+//   print('Employee Salaries');
 
-  var emp1 = FullTimeEmployee(
-    id: '453453',
-    name: 'mada',
-    baseSalary: 5000.0,
-    bonus: 500.0,
-  );
+//   var emp1 = FullTimeEmployee(
+//     id: '453453',
+//     name: 'mada',
+//     baseSalary: 5000.0,
+//     bonus: 500.0,
+//   );
 
-  var emp2 = PartTimeEmployee(
-    id: '7777',
-    name: 'mary',
-    baseSalary: 0.0,
-    hoursWorked: 120.0,
-    hourlyRate: 20.0,
-  );
+//   var emp2 = PartTimeEmployee(
+//     id: '7777',
+//     name: 'mary',
+//     baseSalary: 0.0,
+//     hoursWorked: 120.0,
+//     hourlyRate: 20.0,
+//   );
 
-  var emp3 = Contractor(
-    id: '4444',
-    name: 'kemo',
-    baseSalary: 2500.0,
-    projectRate: 3.0,
-  );
-  emp1.displayInfo();
-  emp2.displayInfo();
-  emp3.displayInfo();
-}// Program 4: Animal Inheritance
+//   var emp3 = Contractor(
+//     id: '4444',
+//     name: 'kemo',
+//     baseSalary: 2500.0,
+//     projectRate: 3.0,
+//   );
+//   emp1.displayInfo();
+//   emp2.displayInfo();
+//   emp3.displayInfo();
+// }
+// Program 4: Animal Inheritance
 
 abstract class Animal {
   String name;
@@ -313,18 +316,19 @@ class Bird extends Animal {
   }
 }
 
-void main() {
-  print('Animal Sounds');
+// void main() {
+//   print('Animal Sounds');
 
-  dynamic dog = Dog(name: 'koko', species: 'Dog',breed: 'german');
-  var cat = Cat(name: 'koky', species: 'Cat',color: 'white');
-  var bird = Bird(name: 'koka', species: 'Bird', type: 'Canary', canFly: true);
+//   dynamic dog = Dog(name: 'koko', species: 'Dog',breed: 'german');
+//   var cat = Cat(name: 'koky', species: 'Cat',color: 'white');
+//   var bird = Bird(name: 'koka', species: 'Bird', type: 'Canary', canFly: true);
 
-  List<Animal> animals = [dog, cat, bird];
-  for (var a in animals) {
-    a.makeSound();
-  }
-}// Program 5: Electronic Device Inheritance.
+//   List<Animal> animals = [dog, cat, bird];
+//   for (var a in animals) {
+//     a.makeSound();
+//   }
+// }
+// Program 5: Electronic Device Inheritance.
 
 class ElectronicDevice {
   String brand;
@@ -393,39 +397,39 @@ class Tablet extends ElectronicDevice {
   }
 }
 
-main() {
-  print('Electronic Devices');
+// main() {
+//   print('Electronic Devices');
 
-  var phone = Smartphone(
-    brand: 'Samsung',
-    model: 'S23',
-    powerConsumption: 15.0,
-    screenSize: 6.1,
-    batteryCapacity: 3900,
-  );
+//   var phone = Smartphone(
+//     brand: 'Samsung',
+//     model: 'S23',
+//     powerConsumption: 15.0,
+//     screenSize: 6.1,
+//     batteryCapacity: 3900,
+//   );
 
-  var laptop = Laptop(
-    brand: 'Dell',
-    model: 'XPS 13',
-    powerConsumption: 65.0,
-    processorType: 'Intel i7',
-    ramSize: 16,
-  );
+//   var laptop = Laptop(
+//     brand: 'Dell',
+//     model: 'XPS 13',
+//     powerConsumption: 65.0,
+//     processorType: 'Intel i7',
+//     ramSize: 16,
+//   );
 
-  dynamic tablet = Tablet(
-    brand: 'Apple',
-    model: 'iPad Pro',
-    powerConsumption: 20.0,
-    hasCellular: true,
-    penSupport: true,
-  );
-  phone.displayBasicInfo();
-  phone.displayBatteryInfo();
-  laptop.displayBasicInfo();
-  laptop.displaySpecifications();
-  tablet.displayBasicInfo();
-  tablet.displayFeatures();
-}
+//   dynamic tablet = Tablet(
+//     brand: 'Apple',
+//     model: 'iPad Pro',
+//     powerConsumption: 20.0,
+//     hasCellular: true,
+//     penSupport: true,
+//   );
+//   phone.displayBasicInfo();
+//   phone.displayBatteryInfo();
+//   laptop.displayBasicInfo();
+//   laptop.displaySpecifications();
+//   tablet.displayBasicInfo();
+//   tablet.displayFeatures();
+// }
 
 
 
